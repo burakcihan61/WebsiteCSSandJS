@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Us</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="img/logo.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="about-us.html">About Us</a></li>
+                       <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <img src="img/menu-icon.png" class="menu-icon" onclick="togglemenu()"> 
+            </div>
+            <div class="row">
+                <div class="col-1">
+                       <h2>About Us</h2>
+                       <h3>Hakkımda</h3>
+                       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus saepe animi asperiores enim possimus dignissimos reiciendis laborum. Omnis, optio vero eveniet quasi rerum repellendus illo nisi maiores sapiente voluptatibus cumque!</p>
+                       
+                </div>
+                <div class="col-2">
+                   <img src="img/about-us.jpg" class="controller">
+                   <div class="color-box"></div>
+                </div>
+            </div>
+            
+               <ul class="socialmedia">
+                   <li><a href="https://www.instagram.com/61brkchn/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                   <li><a href="https://twitter.com/TheCihangir61" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                   <li><a href="https://www.linkedin.com/in/burakcihan61/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                   <li><a href="https://github.com/thecihangir" target="_blank"><i class="fab fa-github"></i></a></li>
+                   <li><a href="https://www.youtube.com/channel/UC4wss73suocjX0Y9RiJIyvQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+               </ul>
+              
+            
+        </div>
+           <script>
+               var menuList = document.getElementById("menuList");
+               menuList.style.maxHeight = "0px";
+               function togglemenu(){
+                  if(menuList.style.maxHeight == "0px") 
+                  {
+                   menuList.style.maxHeight = "130px";
+                  }
+                  else
+                  {
+                   menuList.style.maxHeight = "0px";
+                  }
+               }
+           </script>
+       </body>
+</html>

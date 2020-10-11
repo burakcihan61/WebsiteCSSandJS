@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 50px 0;
+}
+.menu-icon{
+    width: 50px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 35px;
+}
+nav ul li a:hover{
+    color: #f09819;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    font-size: 5rem;
+    font-family: 'Pacifico', cursive;
+}
+.col-1 h3{
+    font-size: 2rem;
+    color: black;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 1.7rem;
+    color: #343a40;
+    font-weight: 100;
+    margin: 20px 0;
+    font-family: 'Indie Flower', cursive;
+}
+.col-1 a{
+    width: 140px;;
+    padding: 15px 30px;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    color: #f09819;
+    font-size: 30px;
+    border-radius: 6px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-2{
+    position: relative;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .controller{
+    width: 55%;
+}
+.color-box{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    clip-path: polygon(54% 0, 100% 0, 100% 100%, 84% 100%);
+    z-index: -1;
+}
+.socialmedia{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+.socialmedia li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialmedia li a{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    color:black;
+    font-size: 3em;  
+}
+.socialmedia li a:hover{
+    color: #f09819;
+}
+@media only screen and (max-width:920px){
+    nav ul{
+        width: 100%;
+        background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        position: absolute;
+        top: 100px;
+        right: 0;
+        z-index: 2;
+        display: flex;
+        font-size: 3rem;
+        justify-content: center;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    nav ul li a{
+        color: #fff;
+        font-size: 10px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .color-box{
+        transform: translateX(75px);
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 35px;
+    }
+    .col-1 h3{
+        font-size: 25px;
+    }
+    .socialmedia li a{
+        font-size: 2rem;
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+    }
+    .col-1 a{
+        font-size: 1.3rem;
+    }  
+    .col-1 p{
+        font-size: 1.2rem;
+    }
+}
